@@ -2,21 +2,14 @@ import UIKit
 import Foundation
 import PlaygroundSupport
 
-let queue = DispatchQueue.init(label: "cus")
-
-
-func executeTask(array:[Int]){
-    var taskCount = array.count
-    for item in array{
-        queue.async {
-            print("exe task \(item) in Thread: \(Thread.current)")
-            Thread.sleep(forTimeInterval: TimeInterval.init(1))
-            taskCount -= 1
-            if taskCount == 0{print("work finished")}
-        }
-        
+func numberAbbr(num:String)->String{
+    let floatNum = Float(num)!
+    if floatNum < 1000 {
+        return num
+    }else if floatNum < 10000 {
+        return String.init(format: "%.2fK", floatNum/1000)
+    }else {
+        return String.init(format: "%.2fW", floatNum/10000)
     }
 }
-
-let array = [1,2,3,4,5,6,7,8,9]
-executeTask(array: array)
+print(numberAbbr(num: "9999"))

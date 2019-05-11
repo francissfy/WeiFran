@@ -12,11 +12,9 @@ import SDWebImage
 class TrendPicViewModel{
     var picUrls:[String]
     var trendId:Int
-    var indexPath:IndexPath
-    init(picUrls:[String],trendId:Int,index:IndexPath) {
+    init(picUrls:[String],trendId:Int) {
         self.picUrls = picUrls
         self.trendId = trendId
-        self.indexPath = index
     }
 }
 
@@ -28,13 +26,13 @@ class TrendPicView: UIView {
     
     var viewModel:TrendPicViewModel?{
         didSet{
-            print("model setted")
             updateUI()
             tag = viewModel!.trendId
         }
     }
     override func awakeFromNib() {
         //set up uicomponent
+        print("trend imageView wake from nib")
         initUI()
     }
     func toInvisiblize(from:Int,to:Int,isHidden:Bool){

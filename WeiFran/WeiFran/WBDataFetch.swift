@@ -23,8 +23,14 @@ func WBFetchTrendsData(maxId:Int,asyncCallback:(()->Void)?){
                 CacheManager.trendsCache.append(contentsOf: trends)
                 //提前缓存小尺寸图片，加快cell的加载速度
                 let onePicTrendThumbNailUrls = trends.flatMap({ (trend) -> [String] in
+                    var retweetedUrl:[String] = []
+                    if let retweeted = trend["retweeted_status"] as? NSDictionary {
+                        if retweeted["pic_urls"] != nil && (retweeted["pic_urls"] as! [NSDictionary]).count == 1 {
+                            retweetedUrl.append((retweeted["pic_urls"] as! [NSDictionary]).first!["thumbnail_pic"] as! String)
+                        }
+                    }
                     let picUrls = trend["pic_urls"] as! [NSDictionary]
-                    return picUrls.count == 1 ? [picUrls.first!["thumbnail_pic"] as! String] : []
+                    return picUrls.count == 1 ? [picUrls.first!["thumbnail_pic"] as! String]+retweetedUrl : retweetedUrl
                 })
                 WBCachingSamllTrendPic(urls: onePicTrendThumbNailUrls, batchCallBack: {
                     if let acb = asyncCallback {acb()}
@@ -37,15 +43,6 @@ func WBFetchTrendsData(maxId:Int,asyncCallback:(()->Void)?){
 func WBInitFetch(callBack:@escaping ()->Void){
     WBFetchTrendsData(maxId: 0, asyncCallback: callBack)
 }
-//缓存用户头像
-func WBFetchUserAvatar(url:String,userId:String,callBack:(()->Void)?){
-    Alamofire.request(URL.init(string: url)!).responseData { (response) in
-        let imageData = response.result.value!
-        let avatar = UIImage.init(data: imageData)!
-        CacheManager.userAvatarCache[userId] = avatar
-        if let cb = callBack{cb()}
-    }
-}
 //缓存微博图片
 //改成SDWebImage
 func WBCachingSamllTrendPic(urls:[String],batchCallBack:(()->Void)?){
@@ -53,14 +50,11 @@ func WBCachingSamllTrendPic(urls:[String],batchCallBack:(()->Void)?){
         return URL.init(string: urlStr)!
     }
     SDWebImagePrefetcher.shared().prefetchURLs(picUrls, progress: { (downloaded, total) in
-        print("\(downloaded)/\(total)")
     }) { (finished, skipped) in
-        print("number of skipped:\(skipped)")
         for (index,url) in picUrls.enumerated(){
             let id = String(urls[index].split(separator: "/").last!.split(separator: ".").first!)
             let key = SDWebImageManager.shared().cacheKey(for: url)!
             CacheManager.trendsPicCache[id] = SDImageCache.shared().imageFromCache(forKey: key)
-            print(CacheManager.trendsPicCache[id] == nil)
         }
         if let bcb = batchCallBack{ bcb() }
     }

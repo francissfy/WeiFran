@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14F8E4BD60EFAAE132F48333 /* Pods_WeiFran.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E5731AB741187BDF3C7D85 /* Pods_WeiFran.framework */; };
+		1513F05922868B1E00609766 /* TimeLineViewRetweetedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1513F05822868B1E00609766 /* TimeLineViewRetweetedCell.xib */; };
 		15280BEF2283E63500455363 /* TrendPicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15280BEE2283E63500455363 /* TrendPicView.swift */; };
 		15280BF12283EF7500455363 /* TimeLineViewNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15280BF02283EF7500455363 /* TimeLineViewNormalCell.xib */; };
 		15280BF32283F21E00455363 /* TimeLineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15280BF22283F21E00455363 /* TimeLineViewCell.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1513F05822868B1E00609766 /* TimeLineViewRetweetedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineViewRetweetedCell.xib; sourceTree = "<group>"; };
 		15280BEE2283E63500455363 /* TrendPicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendPicView.swift; sourceTree = "<group>"; };
 		15280BF02283EF7500455363 /* TimeLineViewNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineViewNormalCell.xib; sourceTree = "<group>"; };
 		15280BF22283F21E00455363 /* TimeLineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				15FE4ACE22802DB800161E23 /* CacheManager.swift */,
 				15280BEE2283E63500455363 /* TrendPicView.swift */,
 				15280BF02283EF7500455363 /* TimeLineViewNormalCell.xib */,
+				1513F05822868B1E00609766 /* TimeLineViewRetweetedCell.xib */,
 				15280BF22283F21E00455363 /* TimeLineViewCell.swift */,
 			);
 			path = WeiFran;
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B29A08227DBA24007954EC /* offlineImage.png in Resources */,
+				1513F05922868B1E00609766 /* TimeLineViewRetweetedCell.xib in Resources */,
 				1542F322227D1DA100EAEC4C /* LaunchScreen.storyboard in Resources */,
 				1542F31F227D1DA100EAEC4C /* Assets.xcassets in Resources */,
 				1542F31A227D1D9F00EAEC4C /* Main.storyboard in Resources */,
