@@ -25,6 +25,7 @@
 		15A84846228B02C700A07343 /* UserPageHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A84845228B02C700A07343 /* UserPageHead.xib */; };
 		15A84848228B050200A07343 /* UserPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A84847228B050200A07343 /* UserPageCell.swift */; };
 		15A8484B228C336600A07343 /* coverPlaceHolder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A8484A228C336600A07343 /* coverPlaceHolder.jpg */; };
+		15A8484D228C37EB00A07343 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8484C228C37EB00A07343 /* Utility.swift */; };
 		15B29A00227D8280007954EC /* AuthWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B299FF227D8280007954EC /* AuthWebView.swift */; };
 		15B29A06227DB4B2007954EC /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15B29A05227DB4B2007954EC /* UserInfo.plist */; };
 		15B29A08227DBA24007954EC /* offlineImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B29A07227DBA24007954EC /* offlineImage.png */; };
@@ -81,6 +82,7 @@
 		15A84845228B02C700A07343 /* UserPageHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPageHead.xib; sourceTree = "<group>"; };
 		15A84847228B050200A07343 /* UserPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageCell.swift; sourceTree = "<group>"; };
 		15A8484A228C336600A07343 /* coverPlaceHolder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coverPlaceHolder.jpg; path = ../../../../../Downloads/coverPlaceHolder.jpg; sourceTree = "<group>"; };
+		15A8484C228C37EB00A07343 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		15B299FF227D8280007954EC /* AuthWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWebView.swift; sourceTree = "<group>"; };
 		15B29A05227DB4B2007954EC /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		15B29A07227DBA24007954EC /* offlineImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offlineImage.png; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				15FE4ACA227E6EFB00161E23 /* DataPersistenceController.swift */,
 				15FE4ACE22802DB800161E23 /* CacheManager.swift */,
 				15FE4ACC227E77B200161E23 /* WBAPI.swift */,
+				15A8484C228C37EB00A07343 /* Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				15FE4ACF22802DB800161E23 /* CacheManager.swift in Sources */,
 				15FE4ACB227E6EFB00161E23 /* DataPersistenceController.swift in Sources */,
 				15A8483D2289943600A07343 /* ViewOrganizer.swift in Sources */,
+				15A8484D228C37EB00A07343 /* Utility.swift in Sources */,
 				15A8483822898F7800A07343 /* UserView.swift in Sources */,
 				15B29A00227D8280007954EC /* AuthWebView.swift in Sources */,
 				15B8E2A3227D5AF900CA8457 /* static.swift in Sources */,

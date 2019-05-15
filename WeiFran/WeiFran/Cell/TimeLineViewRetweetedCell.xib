@@ -69,7 +69,7 @@
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.94914025068283081" green="0.94881945848464966" blue="0.96078664064407349" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ZDR-9B-qXD" firstAttribute="top" secondItem="weq-ay-l9B" secondAttribute="top" constant="8" id="09S-Tq-PIB"/>
                             <constraint firstAttribute="bottom" secondItem="TvL-J5-mxb" secondAttribute="bottom" constant="8" id="AyU-Nw-V29"/>

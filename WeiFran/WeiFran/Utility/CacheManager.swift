@@ -8,12 +8,6 @@
 
 import Foundation
 
-enum TrendPicQuality {
-    case Thumbnail
-    case Bmiddle
-    case Original
-}
-
 
 class CacheManager {
     //用户ID为索引idstr,用户头像缓存
@@ -24,41 +18,4 @@ class CacheManager {
     static var trendsCache:[NSDictionary] = []
     static var trendsNext_cursor:Int = 0
     static var trendsMax_id:Int = 0
-}
-//relavent methods
-func trendPicUrls(trend:NSDictionary,quality:TrendPicQuality?)->[String]{
-    let picUrlsDic = trend["pic_urls"] as! [NSDictionary]
-    let picUrlsThumbnail = picUrlsDic.map { (urlDic) -> String in
-        return urlDic["thumbnail_pic"] as! String
-    }
-    if quality == nil{
-        return picUrlsThumbnail
-    }else{
-        switch quality!{
-        case .Thumbnail:
-            return picUrlsThumbnail
-        case .Bmiddle:
-            return picUrlsThumbnail.map { (thumbnail) -> String in
-                return thumbnail.replacingOccurrences(of: "thumbnail", with: "bmiddle")
-            }
-        case .Original:
-            return picUrlsThumbnail.map { (thumbnail) -> String in
-                return thumbnail.replacingOccurrences(of: "thumbnail", with: "large")
-            }
-        }
-    }
-}
-func convertImageUrlQuality(original:[String],quality:TrendPicQuality)->[String]{
-    switch quality {
-    case .Thumbnail:
-        return original
-    case .Bmiddle:
-        return original.map { (thumbnail) -> String in
-            return thumbnail.replacingOccurrences(of: "thumbnail", with: "bmiddle")
-        }
-    case .Original:
-        return original.map { (thumbnail) -> String in
-            return thumbnail.replacingOccurrences(of: "thumbnail", with: "large")
-        }
-    }
 }

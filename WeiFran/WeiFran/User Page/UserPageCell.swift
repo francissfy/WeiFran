@@ -39,8 +39,8 @@ class UserPageHeaderCell: UITableViewCell {
         backGroundImageView.sd_setImage(with: URL.init(string: coverImageUrl)!, placeholderImage: UIImage.init(named: "coverPlaceHolder.jpg"), options: .progressiveDownload, completed: nil)
         nickNameLabel.text = nickName
         introductionLabel.text = intro
-        followingCountLabel.text = "\(followingCount) following"
-        followersCountLabel.text = "\(followersCount) followers"
+        followingCountLabel.text = numberAbbr(Num: followingCount)+" following"
+        followersCountLabel.text = numberAbbr(Num: followersCount)+" followers"
         cityLabel.text = city
     }
     override func awakeFromNib() {

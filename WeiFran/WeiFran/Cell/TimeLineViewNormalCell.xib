@@ -52,7 +52,7 @@
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDV-Qk-HgS" customClass="TrendPicView" customModule="WeiFran" customModuleProvider="target">
                         <rect key="frame" x="16" y="91.5" width="343" height="343"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="343" id="Nqb-ow-piR"/>
                         </constraints>

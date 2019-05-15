@@ -73,7 +73,6 @@ class UserViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if scrollView.contentOffset.y < -88 && scrollView.contentOffset.y > -300 {
             (userTableView.cellForRow(at: IndexPath.init(row: 0, section: 0)) as! UserPageHeaderCell).modifyCoverImageTopMargin(constant: (300+scrollView.contentOffset.y)*150/212)
         }
-        print(scrollView.contentOffset)
     }
     //数据方法
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
