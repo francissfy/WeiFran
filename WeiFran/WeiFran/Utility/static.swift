@@ -16,9 +16,6 @@ class global{
     static var kAccessToken = "2.00lK6p5GjVi9nB89e86841ccdpsYVC"
     static var kAuthCode = "e4c979da69b266593f1b5b19b36878b5"
     static var uid = ""
-    //trends array
-    static var trends:[NSDictionary] = []
-    static var trendsNext_cursor = 0
 }
 
 

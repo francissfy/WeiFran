@@ -23,7 +23,7 @@ class CacheManager {
     //微博JSON缓存,索引为微博id,NSObject为NSDictionary
     static var trendsCache:[NSDictionary] = []
     static var trendsNext_cursor:Int = 0
-    
+    static var trendsMax_id:Int = 0
 }
 //relavent methods
 func trendPicUrls(trend:NSDictionary,quality:TrendPicQuality?)->[String]{
@@ -45,6 +45,20 @@ func trendPicUrls(trend:NSDictionary,quality:TrendPicQuality?)->[String]{
             return picUrlsThumbnail.map { (thumbnail) -> String in
                 return thumbnail.replacingOccurrences(of: "thumbnail", with: "large")
             }
+        }
+    }
+}
+func convertImageUrlQuality(original:[String],quality:TrendPicQuality)->[String]{
+    switch quality {
+    case .Thumbnail:
+        return original
+    case .Bmiddle:
+        return original.map { (thumbnail) -> String in
+            return thumbnail.replacingOccurrences(of: "thumbnail", with: "bmiddle")
+        }
+    case .Original:
+        return original.map { (thumbnail) -> String in
+            return thumbnail.replacingOccurrences(of: "thumbnail", with: "large")
         }
     }
 }

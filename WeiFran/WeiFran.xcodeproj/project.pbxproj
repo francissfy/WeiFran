@@ -19,6 +19,12 @@
 		1542F31D227D1D9F00EAEC4C /* WeiFran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1542F31B227D1D9F00EAEC4C /* WeiFran.xcdatamodeld */; };
 		1542F31F227D1DA100EAEC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1542F31E227D1DA100EAEC4C /* Assets.xcassets */; };
 		1542F322227D1DA100EAEC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1542F320227D1DA100EAEC4C /* LaunchScreen.storyboard */; };
+		15A8483822898F7800A07343 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8483722898F7800A07343 /* UserView.swift */; };
+		15A8483D2289943600A07343 /* ViewOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8483C2289943600A07343 /* ViewOrganizer.swift */; };
+		15A84841228AEFA100A07343 /* TimeLinePullPrompt.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A84840228AEFA100A07343 /* TimeLinePullPrompt.xib */; };
+		15A84846228B02C700A07343 /* UserPageHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A84845228B02C700A07343 /* UserPageHead.xib */; };
+		15A84848228B050200A07343 /* UserPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A84847228B050200A07343 /* UserPageCell.swift */; };
+		15A8484B228C336600A07343 /* coverPlaceHolder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A8484A228C336600A07343 /* coverPlaceHolder.jpg */; };
 		15B29A00227D8280007954EC /* AuthWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B299FF227D8280007954EC /* AuthWebView.swift */; };
 		15B29A06227DB4B2007954EC /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15B29A05227DB4B2007954EC /* UserInfo.plist */; };
 		15B29A08227DBA24007954EC /* offlineImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B29A07227DBA24007954EC /* offlineImage.png */; };
@@ -37,7 +43,7 @@
 		15FE4AC7227E68C100161E23 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE4AC6227E68C100161E23 /* TimeLineView.swift */; };
 		15FE4AC9227E692200161E23 /* StartupPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE4AC8227E692200161E23 /* StartupPageView.swift */; };
 		15FE4ACB227E6EFB00161E23 /* DataPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE4ACA227E6EFB00161E23 /* DataPersistenceController.swift */; };
-		15FE4ACD227E77B200161E23 /* WBDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE4ACC227E77B200161E23 /* WBDataFetch.swift */; };
+		15FE4ACD227E77B200161E23 /* WBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE4ACC227E77B200161E23 /* WBAPI.swift */; };
 		15FE4ACF22802DB800161E23 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE4ACE22802DB800161E23 /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +75,12 @@
 		1542F321227D1DA100EAEC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1542F323227D1DA100EAEC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1542F329227D2CAA00EAEC4C /* WeiFran-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiFran-Bridging-Header.h"; sourceTree = "<group>"; };
+		15A8483722898F7800A07343 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		15A8483C2289943600A07343 /* ViewOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOrganizer.swift; sourceTree = "<group>"; };
+		15A84840228AEFA100A07343 /* TimeLinePullPrompt.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLinePullPrompt.xib; sourceTree = "<group>"; };
+		15A84845228B02C700A07343 /* UserPageHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPageHead.xib; sourceTree = "<group>"; };
+		15A84847228B050200A07343 /* UserPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageCell.swift; sourceTree = "<group>"; };
+		15A8484A228C336600A07343 /* coverPlaceHolder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coverPlaceHolder.jpg; path = ../../../../../Downloads/coverPlaceHolder.jpg; sourceTree = "<group>"; };
 		15B299FF227D8280007954EC /* AuthWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWebView.swift; sourceTree = "<group>"; };
 		15B29A05227DB4B2007954EC /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		15B29A07227DBA24007954EC /* offlineImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offlineImage.png; sourceTree = "<group>"; };
@@ -87,7 +99,7 @@
 		15FE4AC6227E68C100161E23 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
 		15FE4AC8227E692200161E23 /* StartupPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupPageView.swift; sourceTree = "<group>"; };
 		15FE4ACA227E6EFB00161E23 /* DataPersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceController.swift; sourceTree = "<group>"; };
-		15FE4ACC227E77B200161E23 /* WBDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBDataFetch.swift; sourceTree = "<group>"; };
+		15FE4ACC227E77B200161E23 /* WBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAPI.swift; sourceTree = "<group>"; };
 		15FE4ACE22802DB800161E23 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		59E262BECA7446B96FFE45D7 /* Pods-WeiFran.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiFran.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeiFran/Pods-WeiFran.debug.xcconfig"; sourceTree = "<group>"; };
 		D4E5731AB741187BDF3C7D85 /* Pods_WeiFran.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiFran.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,30 +150,76 @@
 		1542F313227D1D9F00EAEC4C /* WeiFran */ = {
 			isa = PBXGroup;
 			children = (
+				15A84849228C214F00A07343 /* Cell */,
+				15A84844228B028E00A07343 /* User Page */,
+				15A8483B22898FE800A07343 /* Utility */,
+				15A8483A22898FD300A07343 /* main */,
+				15A8483922898F9F00A07343 /* TimeLine */,
 				15280BF422841CF500455363 /* placeholder.png */,
+				15A8484A228C336600A07343 /* coverPlaceHolder.jpg */,
 				15B29A07227DBA24007954EC /* offlineImage.png */,
-				1542F314227D1D9F00EAEC4C /* AppDelegate.swift */,
-				1542F316227D1D9F00EAEC4C /* ViewController.swift */,
 				1542F318227D1D9F00EAEC4C /* Main.storyboard */,
 				1542F31E227D1DA100EAEC4C /* Assets.xcassets */,
 				1542F320227D1DA100EAEC4C /* LaunchScreen.storyboard */,
 				1542F323227D1DA100EAEC4C /* Info.plist */,
 				1542F31B227D1D9F00EAEC4C /* WeiFran.xcdatamodeld */,
 				1542F329227D2CAA00EAEC4C /* WeiFran-Bridging-Header.h */,
-				15B8E2A2227D5AF900CA8457 /* static.swift */,
 				15B299FF227D8280007954EC /* AuthWebView.swift */,
 				15B29A05227DB4B2007954EC /* UserInfo.plist */,
-				15FE4AC6227E68C100161E23 /* TimeLineView.swift */,
 				15FE4AC8227E692200161E23 /* StartupPageView.swift */,
-				15FE4ACA227E6EFB00161E23 /* DataPersistenceController.swift */,
-				15FE4ACC227E77B200161E23 /* WBDataFetch.swift */,
-				15FE4ACE22802DB800161E23 /* CacheManager.swift */,
+				15A8483C2289943600A07343 /* ViewOrganizer.swift */,
+			);
+			path = WeiFran;
+			sourceTree = "<group>";
+		};
+		15A8483922898F9F00A07343 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				15FE4AC6227E68C100161E23 /* TimeLineView.swift */,
 				15280BEE2283E63500455363 /* TrendPicView.swift */,
+				15A84840228AEFA100A07343 /* TimeLinePullPrompt.xib */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		15A8483A22898FD300A07343 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				1542F314227D1D9F00EAEC4C /* AppDelegate.swift */,
+				1542F316227D1D9F00EAEC4C /* ViewController.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		15A8483B22898FE800A07343 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				15B8E2A2227D5AF900CA8457 /* static.swift */,
+				15FE4ACA227E6EFB00161E23 /* DataPersistenceController.swift */,
+				15FE4ACE22802DB800161E23 /* CacheManager.swift */,
+				15FE4ACC227E77B200161E23 /* WBAPI.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		15A84844228B028E00A07343 /* User Page */ = {
+			isa = PBXGroup;
+			children = (
+				15A84845228B02C700A07343 /* UserPageHead.xib */,
+				15A84847228B050200A07343 /* UserPageCell.swift */,
+				15A8483722898F7800A07343 /* UserView.swift */,
+			);
+			path = "User Page";
+			sourceTree = "<group>";
+		};
+		15A84849228C214F00A07343 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
 				15280BF02283EF7500455363 /* TimeLineViewNormalCell.xib */,
 				1513F05822868B1E00609766 /* TimeLineViewRetweetedCell.xib */,
 				15280BF22283F21E00455363 /* TimeLineViewCell.swift */,
 			);
-			path = WeiFran;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		2FC1FA98AA645E23C4B63789 /* Frameworks */ = {
@@ -228,6 +286,7 @@
 				TargetAttributes = {
 					1542F310227D1D9F00EAEC4C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -236,6 +295,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = 1542F308227D1D9F00EAEC4C;
@@ -254,13 +314,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B29A08227DBA24007954EC /* offlineImage.png in Resources */,
+				15A8484B228C336600A07343 /* coverPlaceHolder.jpg in Resources */,
 				1513F05922868B1E00609766 /* TimeLineViewRetweetedCell.xib in Resources */,
 				1542F322227D1DA100EAEC4C /* LaunchScreen.storyboard in Resources */,
 				1542F31F227D1DA100EAEC4C /* Assets.xcassets in Resources */,
 				1542F31A227D1D9F00EAEC4C /* Main.storyboard in Resources */,
 				15280BF522841CF600455363 /* placeholder.png in Resources */,
 				15B29A06227DB4B2007954EC /* UserInfo.plist in Resources */,
+				15A84841228AEFA100A07343 /* TimeLinePullPrompt.xib in Resources */,
 				15280BF12283EF7500455363 /* TimeLineViewNormalCell.xib in Resources */,
+				15A84846228B02C700A07343 /* UserPageHead.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,15 +406,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1542F317227D1D9F00EAEC4C /* ViewController.swift in Sources */,
-				15FE4ACD227E77B200161E23 /* WBDataFetch.swift in Sources */,
+				15FE4ACD227E77B200161E23 /* WBAPI.swift in Sources */,
 				15FE4AC7227E68C100161E23 /* TimeLineView.swift in Sources */,
 				15280BF32283F21E00455363 /* TimeLineViewCell.swift in Sources */,
 				15280BEF2283E63500455363 /* TrendPicView.swift in Sources */,
 				1542F315227D1D9F00EAEC4C /* AppDelegate.swift in Sources */,
 				1542F31D227D1D9F00EAEC4C /* WeiFran.xcdatamodeld in Sources */,
+				15A84848228B050200A07343 /* UserPageCell.swift in Sources */,
 				15FE4AC9227E692200161E23 /* StartupPageView.swift in Sources */,
 				15FE4ACF22802DB800161E23 /* CacheManager.swift in Sources */,
 				15FE4ACB227E6EFB00161E23 /* DataPersistenceController.swift in Sources */,
+				15A8483D2289943600A07343 /* ViewOrganizer.swift in Sources */,
+				15A8483822898F7800A07343 /* UserView.swift in Sources */,
 				15B29A00227D8280007954EC /* AuthWebView.swift in Sources */,
 				15B8E2A3227D5AF900CA8457 /* static.swift in Sources */,
 			);
@@ -414,6 +480,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 29QS2U2ZSM;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -475,6 +542,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 29QS2U2ZSM;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -500,6 +568,7 @@
 			baseConfigurationReference = 59E262BECA7446B96FFE45D7 /* Pods-WeiFran.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29QS2U2ZSM;
 				INFOPLIST_FILE = "$(SRCROOT)/WeiFran/Info.plist";
@@ -510,9 +579,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.francis.WeiFran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/francis/Code/Xcode/WeiFran/WeiFran/WeiFran/WeiFran-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -521,6 +591,7 @@
 			baseConfigurationReference = DC518DB66CE33107B1DC1666 /* Pods-WeiFran.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29QS2U2ZSM;
 				INFOPLIST_FILE = "$(SRCROOT)/WeiFran/Info.plist";
@@ -531,9 +602,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.francis.WeiFran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/francis/Code/Xcode/WeiFran/WeiFran/WeiFran/WeiFran-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
